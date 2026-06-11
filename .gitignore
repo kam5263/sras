@@ -8,6 +8,11 @@ sras/data/test/raw/
 
 # Reference paper PDF
 *.pdf
+!sras/docs/*.pdf
+
+# Presentation source files
+*.pptx
+*.ppt
 
 # Generated binary embedding caches (regenerate via data_pipeline.py)
 sras/data/cache/
