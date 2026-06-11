@@ -1,13 +1,12 @@
 # SRAS: 경량 강화학습 기반 문서 선택기 (한국어 법률 QA 적용)
 
 > **서강대학교 강화학습 프로젝트** · 2026년 1학기  
-> 학번/이름: (본인 정보 기재)
 
 ## 프로젝트 개요
 
 SRAS(Sparse Reward-Aware Selector)는 RAG(Retrieval-Augmented Generation) 파이프라인에서 문서 선택 단계를 강화학습(PPO)으로 학습하는 초경량 모델입니다.
 
-본 프로젝트는 Muttur(2026)의 논문 *"SRAS: A Lightweight RL-based Document Selector for Edge-Native RAG Pipelines"*의 결과를 재연하되, 데이터셋을 **한국어 법률 QA**(법령·판결문·결정례·해석례)로 교체하고 임베딩 인코더를 `jhgan/ko-sroberta-multitask`(768차원)으로 대체했습니다.
+본 프로젝트는 Muttur(2026)의 논문 "SRAS: A Lightweight RL-based Document Selector for Edge-Native RAG Pipelines"의 결과를 재연하되, 데이터셋을 **한국어 법률 QA**(법령·판결문·결정례·해석례)로 교체하고 임베딩 인코더를 `jhgan/ko-sroberta-multitask`(768차원)으로 대체했습니다.
 
 ### 참고 논문
 
