@@ -1,0 +1,31 @@
+# SRAS default hyperparameters (paper values)
+model:
+  embedding_dim: 768
+  hidden_dim: 64
+
+pipeline:
+  n_candidates: 8       # docs per query (1 gold + 7 distractors)
+  top_k: 3              # docs selected per query
+
+reward:
+  alpha: 0.6            # weight on Relaxed F1 (1-alpha on BERTScore)
+  bertscore_model: "klue/roberta-base"
+
+ppo:
+  epochs: 25
+  batch_size: 8
+  lr: 1.0e-5
+  gamma: 0.99
+  clip_epsilon: 0.2
+  optimizer: adamw
+  warmup_epochs: 2
+
+warmup:
+  lr: 1.0e-3
+  epochs: 2
+
+paths:
+  raw_dir: data/raw
+  qa_pairs: data/qa_pairs.jsonl
+  embeddings: data/cache/embeddings.pt
+  checkpoint: checkpoints/sras_best.pt

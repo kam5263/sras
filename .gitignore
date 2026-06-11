@@ -1,0 +1,37 @@
+# Virtual environment
+.rl/
+
+# Raw source dataset (not redistributable)
+raw_dataset/
+sras/data/raw/
+sras/data/test/raw/
+
+# Reference paper PDF
+*.pdf
+
+# Generated binary embedding caches (regenerate via data_pipeline.py)
+sras/data/cache/
+sras/data/test/embeddings_test.pt
+
+# Model checkpoints (download links in README)
+sras/checkpoints/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Claude Code
+.claude/
+
+# Editors
+.vscode/
+*.swp
+*.swo
