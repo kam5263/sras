@@ -277,10 +277,21 @@ Hit Rate @K와 MRR은 테스트셋(200 QA, 193개 문서) 기준으로 보고합
 ---
 
 ## 학습된 모델 다운로드
-| 파일 | 링크 |
-|---|---|
-| `sras_best.pt` | (학습 후 링크 추가) |
-| `sras_warmup.pt` | (학습 후 링크 추가) |
+
+[GitHub Releases v1.0](https://github.com/kam5263/sras/releases/tag/v1.0)에서 다운로드하거나 아래 명령어를 사용하세요.
+
+| 파일 | 설명 | 링크 |
+|---|---|---|
+| `sras_best.pt` | PPO 학습 최종 체크포인트 | [다운로드](https://github.com/kam5263/sras/releases/download/v1.0/sras_best.pt) |
+| `sras_warmup.pt` | 지도 사전학습(Warmup) 체크포인트 | [다운로드](https://github.com/kam5263/sras/releases/download/v1.0/sras_warmup.pt) |
+| `sras_best_hardneg.pt` | Hard Negative Distractor 실험용 | [다운로드](https://github.com/kam5263/sras/releases/download/v1.0/sras_best_hardneg.pt) |
+
+```bash
+# 체크포인트 디렉터리로 다운로드
+mkdir -p sras/checkpoints
+wget -P sras/checkpoints https://github.com/kam5263/sras/releases/download/v1.0/sras_best.pt
+wget -P sras/checkpoints https://github.com/kam5263/sras/releases/download/v1.0/sras_warmup.pt
+```
 
 ---
 
